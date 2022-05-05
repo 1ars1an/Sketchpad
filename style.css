@@ -1,0 +1,14 @@
+body {
+    background-color: #E5E5E5;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    color: #000;
+    text-align: center;
+    font: bold calc(.025 * (100vw)) 'Arial', sans-serif;;
+}
