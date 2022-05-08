@@ -10,5 +10,29 @@ body {
 .header {
     color: #000;
     text-align: center;
-    font: bold calc(.025 * (100vw)) 'Arial', sans-serif;;
+    font: bold calc(.025 * (100vw)) 'Arial', sans-serif;
+}
+
+.title {
+    margin-top: 15px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxdiv { /* class for the dynamic js boxes*/
+    /* border: 1px solid black; */
+    margin: 0px;
+    padding: 15px;
+    background-color: #fff;
 }
