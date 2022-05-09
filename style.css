@@ -37,7 +37,32 @@ button {
     border-radius: 12px;
     padding: 8px;
     background-color: #fff;
+    border: 1px dashed black;
 }
+
+button:hover {
+    padding: 16px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+button:active {
+    background-color: #D7CCC8;
+}
+
+.bouncy{
+    animation:bouncy 5s infinite linear;
+    position:relative;
+    }
+    @keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+    }
 
 .grid {
     width: 500px;
