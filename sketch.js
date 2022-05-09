@@ -49,9 +49,10 @@ function userInput() {
         }
         gridsize = user;
         gridInitialize();
-    } else if (user !== null && user > 0 && user <= 100) {
-        grildsize = user;
-        gridlInitialize();
+    } 
+    if (user !== null && user > 0 && user <= 100) {
+        gridsize = user;
+        gridInitialize();
     }
 }
 
