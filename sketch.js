@@ -34,7 +34,8 @@ function gridHover() {
 }
 
 function gridInitialize() {
-    if (gridsize === undefined || gridsize === 0) {
+    console.log(gridsize);
+    if (gridsize === undefined || isNaN(gridsize) || gridsize === 0) {
         gridsize = 16;
     }
     colorpick = 'black';
@@ -43,15 +44,19 @@ function gridInitialize() {
 
 function userInput() {
     let user = Number(prompt("Enter the size of the grid [Max Size = 100]"));
+    console.log(user);
     if (user > 100) {
         while (user > 100) {
             user = Number(window.prompt('Seriously, enter less than 100 * 100'));
         }
         gridsize = user;
+        console.log(`1, ${gridsize}`);
         gridInitialize();
+        return;
     } 
     if (user !== null && user > 0 && user <= 100) {
         gridsize = user;
+        console.log(`2, ${gridsize}`);
         gridInitialize();
     }
 }
